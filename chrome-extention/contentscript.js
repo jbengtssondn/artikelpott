@@ -52,20 +52,15 @@ function addHtmlUrl(url,id) {
   head.appendChild(s);
 };
 
-
-
 var l = new Loader();
 l.require([
     chrome.extension.getURL('snabbt.js'),
     chrome.extension.getURL('storage.js'),
     chrome.extension.getURL('modal.js'),
     chrome.extension.getURL('ui.js'),
-    chrome.extension.getURL('app.js')],
-    function() {
-
-
-    }
-);
+    chrome.extension.getURL('app.js'),
+    chrome.extension.getURL('share.js')],
+    function() {});
 
 loadCss(chrome.extension.getURL('artikelpott.css'));
 addHtmlUrl(chrome.extension.getURL('modal.html'),"modalUrl");

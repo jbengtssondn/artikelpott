@@ -1,6 +1,5 @@
-function counterUpdated(newValue) {
-    console.log(newValue);
-    // TODO: display newValue
+function counterUpdated(newValue) {    
+    updatePottCounter(newValue;
 }
 
 console.log('storage');

@@ -16,7 +16,6 @@ function checkUrlPath() {
 
     if(path != lastPath && (/[a-z]\/[a-z]/)) {
         counter.dec();
-        updatePottCounter(counter.get());
     }
 };
 

@@ -13,13 +13,14 @@
       "tabs"
     ],
     "web_accessible_resources": [
+      "storage.js",
       "snabbt.js",
       "storage.js",
       "ui.js",
       "app.js",
       "artikelpott.css",
       "modal.js",
-      "modal.html"
-
+      "modal.html",
+      "share.js"
     ]
 }
