@@ -135,17 +135,18 @@
   background-color: #6288a5;
   border-color: #4d7b9f;
   color: #fff;
-  margin:10px 280px;
+  margin:10px 220px;
 }
 
 .myModal * {
   font-family: PublicoBanner-Light-Web;
 }
 
-#videoContainer, #videoProgress {
+.alternativeContainer {
   display:none;
 }
 
 #videoProgress {
+  display: none;
   height: 5px;
 }
