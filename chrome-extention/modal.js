@@ -7,7 +7,7 @@
  $.getScript("https://code.jquery.com/ui/1.11.4/jquery-ui.js",function( data, textStatus, jqxhr ) {
    init();
  });
- 
+
  function init(){
      addModal();
     
@@ -16,11 +16,10 @@
  function addModal() {
          $("body").prepend("<div id='insert'></div>");
          $("#insert").load($("#modalUrl")[0].innerText,function() {
-              $( "#dialog" ).dialog({ autoOpen: true, 
+              $( "#dialog" ).dialog({ autoOpen: false, 
                   maxWidth:600,
                   maxHeight: 500,
                   width: 1000,
-                  height: 600,
                   modal: true,
                   dialogClass: "myModal",
                   open: function() {
@@ -38,7 +37,24 @@
     $("#videoButton").click(videoButtonClick);
  }
 
+$.getScript("http://csp.screen9.com/js/ultralight.js");
+var screen9_ajax_auth = "QHXsCbtEUhagtECcyKU9-9-ipMIr0ryNinYqdjg4J9sKtOmjOstMvA";
+
+function videoEnded() {
+    // TODO: increment artikelpott
+    console.log("video ended");
+}
+function videoEmbedded(data) { data.player.bind("finish", videoEnded); }
+function videoFailed(reason) { console.log(reason); }
+
 function videoButtonClick() {
     $("#buttonsContainer").hide();
-    $("#videContainer").show();
+    $("#videoContainer").show();
+    var options = {
+	"mediaid": "2ZYXjBfcAr3ldYltl_OMoA",
+	"containerid": "videoContainer",
+	"autoplay": true,
+	"controls": false,
+    };
+    screen9.api.embed(options, videoEmbedded, videoFailed);
  };
