@@ -1,3 +1,4 @@
+console.log('snabbt');
 (function (root, factory) {
   var snabbt = factory();
 

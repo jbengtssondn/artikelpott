@@ -8,14 +8,18 @@
         "matches": ["http://www.dn.se/*"]
     }],
     "permissions": [
-      "activeTab"
+      "activeTab",
+      "webNavigation",
+      "tabs"
     ],
     "web_accessible_resources": [
       "snabbt.js",
-      "script.js",
+      "storage.js",
+      "ui.js",
+      "app.js",
       "artikelpott.css",
       "modal.js",
-      "modal.html",
-      "storage.js"
+      "modal.html"
+
     ]
 }

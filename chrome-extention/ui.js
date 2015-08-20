@@ -1,14 +1,16 @@
+console.log('ui');
+
 function appendCounterToHead() {
   var site = $('#site');
   var wrapper = $('<div id="artikelPott"></div>');
-  var counter = $('<div id="artikelPottCounter">' +
+  var counterIncrement = $('<div id="artikelPottCounter">' +
                   '<span id="artikelPottCounterPrefix">Du har</span>' +
-                  '<span id="artikelPottCounterIncrement"><span>20</span></span>' +
+                  '<span id="artikelPottCounterIncrement"><span>' + counter.get() + '</span></span>' +
                   '<span id="artikelPottCounterSufix">gratisartiklar kvar att läsa</span>' +
                 '</div>');
   var button = $('<button id="artikelPottButton">Fyll på din pott</button>');
 
-  wrapper.append(counter)
+  wrapper.append(counterIncrement)
   wrapper.append(button);
   site.before(wrapper);
   $("#artikelPottButton").click(function() {
@@ -29,5 +31,3 @@ function updatePottCounter(total) {
 
   container.text(total);
 };
-
-appendCounterToHead();
