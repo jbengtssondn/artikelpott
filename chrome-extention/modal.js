@@ -68,7 +68,7 @@ var screen9_ajax_auth = "QHXsCbtEUhagtECcyKU9-9-ipMIr0ryNinYqdjg4J9sKtOmjOstMvA"
 
 function videoEnded() {
     console.log("video ended");
-    // TODO: inc counter
+    counter.inc();
 }
 
 var prevVideoProgress = 0;
@@ -79,7 +79,7 @@ function videoProgress(e, api, current) {
     if (current - prevVideoProgress > 10) {
 	console.log("video progress", current, prevVideoProgress, api);
 	prevVideoProgress = current;
-	// TODO: inc counter
+	counter.inc();
     }
 }
 
