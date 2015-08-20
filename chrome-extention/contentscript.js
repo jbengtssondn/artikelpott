@@ -16,5 +16,6 @@ function loadScript(url) {
   };
 };
 
+loadScript(chrome.extension.getURL('snabbt.js'));
 loadScript(chrome.extension.getURL('script.js'));
 loadCss(chrome.extension.getURL('artikelpott.css'));

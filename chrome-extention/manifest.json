@@ -10,5 +10,9 @@
     "permissions": [
       "activeTab"
     ],
-    "web_accessible_resources": ["script.js", "artikelpott.css"]
+    "web_accessible_resources": [
+      "snabbt.js", 
+      "script.js",
+      "artikelpott.css"
+    ]
 }
