@@ -120,7 +120,7 @@
   touch-action: manipulation;
   background-color: gold;
   font-family: GuardianSansWeb-Bold;
-  font-size: 40px;
+  font-size: 36px;
   text-transform: uppercase;
   border-radius: 3px;
   border: 1px solid #cccccc;
@@ -135,12 +135,45 @@
   background-color: #6288a5;
   border-color: #4d7b9f;
   color: #fff;
-  margin:10px 220px;
+  margin:20px 220px;
 }
 
-.myModal * {
-  font-family: PublicoBanner-Light-Web;
+.altHeader {
+  
+  font-weight: normal;
+  cursor: pointer;
+  background-image: none;
+  /*white-space: nowrap;*/
+  padding: 0;
+  /*margin: 0;*/
+  overflow: visible;
+  /*display: ;*/
+  display:block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-decoration: none;
+  width: auto;
+  background-repeat: no-repeat;
+  color: #5a5a5a;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  font-family: GuardianSansWeb-Bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  margin:10px auto;
 }
+
+.altContent {
+    padding: 10px 10px;
+    margin:10px 150px;
+    font-size: 22px;
+    font-family: PublicoBanner-Light-Web;  
+}
+
 
 .alternativeContainer {
   display:none;
