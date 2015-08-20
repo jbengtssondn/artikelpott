@@ -10,26 +10,35 @@
  
  function init(){
      addModal();
- }
+    
+ };
  
  function addModal() {
          $("body").prepend("<div id='insert'></div>");
          $("#insert").load($("#modalUrl")[0].innerText,function() {
-              $( "#dialog" ).dialog({ autoOpen: false, 
+              $( "#dialog" ).dialog({ autoOpen: true, 
                   maxWidth:600,
                   maxHeight: 500,
                   width: 1000,
                   height: 600,
                   modal: true,
-                  dialogClass: "no-close",
-                  buttons: [
-                    {
-                      text: "OK",
-                      click: function() {
-                        $( this ).dialog( "close" );
-                      }
-                    }
-                  ]
-               }); 
+                  dialogClass: "myModal",
+                  open: function() {
+                      jQuery('.ui-widget-overlay').bind('click', function() {
+                          jQuery('#dialog').dialog('close');
+                      })
+                  }
+                 
+               });
+               initButtonEvents();
         });
+ };
+ 
+ function initButtonEvents() {
+    $("#videoButton").click(videoButtonClick);
  }
+
+function videoButtonClick() {
+    $("#buttonsContainer").hide();
+    $("#videContainer").show();
+ };
