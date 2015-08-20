@@ -1,5 +1,5 @@
 function loadCss(url) {
-  var head = document.getElementsByTagName('head')[0],
+  var head = document.getElementsByTagName('head')[0];
   link = document.createElement('link');
   link.type = 'text/css';
   link.rel = 'stylesheet';
@@ -15,7 +15,16 @@ function loadScript(url) {
       s.parentNode.removeChild(s);
   };
 };
+function addHtmlUrl(url,id) {
+  var head = document.getElementsByTagName('head')[0];
+  var s = document.createElement('div');
+  s.setAttribute("id", id);
+  var node = document.createTextNode(url)
+  s.appendChild(node);
+  head.appendChild(s);
+};
 
 loadCss(chrome.extension.getURL('artikelpott.css'));
 loadScript(chrome.extension.getURL('modal.js'));
 loadScript(chrome.extension.getURL('script.js'));
+addHtmlUrl(chrome.extension.getURL('modal.html'),"modalUrl");

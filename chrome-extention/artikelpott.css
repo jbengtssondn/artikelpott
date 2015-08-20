@@ -17,3 +17,7 @@
 .no-close .ui-dialog-titlebar-close {
   display: none;
 }
+
+.no-close .ui-widget-header {
+  display: none;
+}

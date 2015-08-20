@@ -11,6 +11,9 @@ function appendCounterToHead() {
   wrapper.append(counter)
   wrapper.append(button);
   site.before(wrapper);
+  $("#artikelPottButton").click(function() {
+           $( "#dialog" ).dialog( "open" );
+   });
 };
 
 appendCounterToHead();

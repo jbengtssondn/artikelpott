@@ -10,5 +10,5 @@
     "permissions": [
       "activeTab"
     ],
-    "web_accessible_resources": ["script.js", "artikelpott.css", "modal.js"]
+    "web_accessible_resources": ["script.js", "artikelpott.css", "modal.js", "modal.html"]
 }
