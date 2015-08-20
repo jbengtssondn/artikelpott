@@ -4,10 +4,11 @@
     "manifest_version": 2,
     "content_scripts": [{
         "js": ["contentscript.js"],
+        "css": ["artikelpott.css"],
         "matches": ["http://www.dn.se/*"]
     }],
     "permissions": [
       "activeTab"
     ],
-    "web_accessible_resources": ["script.js"]
+    "web_accessible_resources": ["script.js", "artikelpott.css"]
 }

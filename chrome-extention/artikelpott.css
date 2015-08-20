@@ -1,0 +1,14 @@
+#site {
+  margin-top: 82px; //42px;
+}
+
+
+#artikelPott {
+  background: #F0F0F0;
+  height: 40px;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  position: fixed;
+}
