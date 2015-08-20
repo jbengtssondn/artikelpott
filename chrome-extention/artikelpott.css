@@ -139,11 +139,14 @@
 }
 
 .myModal * {
- 
   font-family: PublicoBanner-Light-Web;
-  margin-right: 5px;
 }
 
 .alternativeContainer {
   display:none;
+}
+
+#videoProgress {
+  display: none;
+  height: 5px;
 }
