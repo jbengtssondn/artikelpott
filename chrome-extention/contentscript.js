@@ -16,7 +16,7 @@ function loadScript(url) {
   };
 };
 function addHtmlUrl(url,id) {
-  var head = document.getElementsByTagName('head')[0];
+  var head = document.getElementsByTagName('body')[0];
   var s = document.createElement('div');
   s.setAttribute("id", id);
   var node = document.createTextNode(url)
