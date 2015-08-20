@@ -1,0 +1,13 @@
+{
+    "name": "ArtikelPott",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "js": ["contentscript.js"],
+        "matches": ["http://www.dn.se/*"]
+    }],
+    "permissions": [
+      "activeTab"
+    ],
+    "web_accessible_resources": ["script.js"]
+}
