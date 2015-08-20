@@ -15,6 +15,7 @@
       "script.js",
       "artikelpott.css",
       "modal.js",
-      "modal.html"
+      "modal.html",
+      "storage.js"
     ]
 }
