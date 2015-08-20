@@ -14,7 +14,7 @@ function checkUrlPath() {
     var path = location.pathname;
     var lastPath = urlStorage.getPath();
 
-    if(path != lastPath && (/[a-z]\/[a-z]/)) {
+    if(path != lastPath && (/[a-z]\/[a-z]/.test(path))) {
         counter.dec();
     }
 };
