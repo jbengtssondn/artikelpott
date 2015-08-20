@@ -41,10 +41,28 @@ $.getScript("http://csp.screen9.com/js/ultralight.js");
 var screen9_ajax_auth = "QHXsCbtEUhagtECcyKU9-9-ipMIr0ryNinYqdjg4J9sKtOmjOstMvA";
 
 function videoEnded() {
-    // TODO: increment artikelpott
     console.log("video ended");
+    // TODO: inc counter
 }
-function videoEmbedded(data) { data.player.bind("finish", videoEnded); }
+
+var prevVideoProgress = 0;
+function videoProgress(e, api, current) {
+    percent = 100 * (current / $("#videoContainer video")[0].duration);
+    var new_width = percent + "%";
+    $("#videoProgress .ui-progressbar-value").animate({"width": new_width}, "fast");
+    if (current - prevVideoProgress > 10) {
+	console.log("video progress", current, prevVideoProgress, api);
+	prevVideoProgress = current;
+	// TODO: inc counter
+    }
+}
+
+function videoEmbedded(data) {
+    data.player.bind("finish", videoEnded); 
+    data.player.bind("progress", videoProgress);
+    $("#videoProgress").show().progressbar({"value": 0.001});
+}
+
 function videoFailed(reason) { console.log(reason); }
 
 function videoButtonClick() {
