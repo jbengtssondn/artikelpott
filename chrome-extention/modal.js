@@ -1,3 +1,9 @@
+ 
+  $('<link>', {
+            rel: 'stylesheet',
+            type: 'text/css',
+            href: '//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'
+        }).appendTo('head');
  $.getScript("https://code.jquery.com/ui/1.11.4/jquery-ui.js",function( data, textStatus, jqxhr ) {
    init();
  });
