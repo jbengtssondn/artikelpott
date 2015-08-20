@@ -25,7 +25,9 @@ function addHtmlUrl(url,id) {
 };
 
 loadCss(chrome.extension.getURL('artikelpott.css'));
+loadScript(chrome.extension.getURL('storage.js'));
 loadScript(chrome.extension.getURL('snabbt.js'))
 loadScript(chrome.extension.getURL('modal.js'));
 loadScript(chrome.extension.getURL('script.js'));
+loadScript(chrome.extension.getURL('share.js'));
 addHtmlUrl(chrome.extension.getURL('modal.html'),"modalUrl");
