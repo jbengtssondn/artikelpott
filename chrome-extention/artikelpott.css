@@ -135,7 +135,7 @@
   background-color: #6288a5;
   border-color: #4d7b9f;
   color: #fff;
-  margin:10px 280px;
+  margin:10px 220px;
 }
 
 .myModal * {
@@ -144,6 +144,6 @@
   margin-right: 5px;
 }
 
-#videoContainer {
+.alternativeContainer {
   display:none;
 }
