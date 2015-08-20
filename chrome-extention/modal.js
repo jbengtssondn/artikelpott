@@ -23,6 +23,8 @@
                   modal: true,
                   dialogClass: "myModal",
                   open: function() {
+                      
+                      initModal();
                       jQuery('.ui-widget-overlay').bind('click', function() {
                           jQuery('#dialog').dialog('close');
                       })
@@ -32,6 +34,12 @@
                initButtonEvents();
         });
  };
+ 
+ function initModal() {
+     $("#buttonsContainer").show();
+     $("#shareContainer").hide();
+      $("#videoContainer").hide();
+ }
  
  function initButtonEvents() {
     $("#videoButton").click(videoButtonClick);
@@ -49,8 +57,7 @@
 function shareButtonClick() {
     hideAlternatives();
     $("#shareContainer").show();
-    
-  }
+ }
 
 //END SHARE
 
