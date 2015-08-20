@@ -79,3 +79,12 @@
   background-color: #326891;
   border-color: #265e8b;
 }
+
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.no-close .ui-widget-header {
+  display: none;
+}

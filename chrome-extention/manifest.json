@@ -11,8 +11,10 @@
       "activeTab"
     ],
     "web_accessible_resources": [
-      "snabbt.js", 
+      "snabbt.js",
       "script.js",
-      "artikelpott.css"
+      "artikelpott.css",
+      "modal.js",
+      "modal.html"
     ]
 }
