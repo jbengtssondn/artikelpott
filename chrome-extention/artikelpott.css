@@ -12,3 +12,8 @@
   z-index: 10000;
   position: fixed;
 }
+
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
