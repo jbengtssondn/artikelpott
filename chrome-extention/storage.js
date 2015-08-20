@@ -1,8 +1,7 @@
-function counterUpdated(newValue) {    
-    updatePottCounter(newValue;
+function counterUpdated(newValue) {
+    updatePottCounter(newValue);
 }
 
-console.log('storage');
 var counter = {
     inc: function() {
     	newValue = 1 + parseInt(localStorage.getItem('artikelpott') || 0);

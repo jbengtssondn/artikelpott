@@ -1,4 +1,3 @@
-console.log('ui');
 
 function appendCounterToHead() {
   var site = $('#site');
