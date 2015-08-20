@@ -67,7 +67,6 @@ $.getScript("http://csp.screen9.com/js/ultralight.js");
 var screen9_ajax_auth = "QHXsCbtEUhagtECcyKU9-9-ipMIr0ryNinYqdjg4J9sKtOmjOstMvA";
 
 function videoEnded() {
-    console.log("video ended");
     counter.inc();
 }
 
@@ -77,7 +76,6 @@ function videoProgress(e, api, current) {
     var new_width = percent + "%";
     $("#videoProgress .ui-progressbar-value").animate({"width": new_width}, "fast");
     if (current - prevVideoProgress > 10) {
-	console.log("video progress", current, prevVideoProgress, api);
 	prevVideoProgress = current;
 	counter.inc();
     }
